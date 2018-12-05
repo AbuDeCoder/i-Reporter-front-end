@@ -23,3 +23,10 @@ function redirect (url)
 function videoplayback(){
     
 }
+
+
+function getNumberOfRecordsForUser(userId,recordStatus,recordType){
+    // some functionality will be implemented here but for now
+    return 50;
+
+}
