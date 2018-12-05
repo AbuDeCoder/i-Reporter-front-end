@@ -1,0 +1,172 @@
+html
+{
+    width:100%;
+    height:100%;
+    margin:0px 0px 0px;
+    padding:0px 0px 0px;
+}
+
+body
+{
+    height:100%;
+    width:100%;
+    margin:0px 0px 0px;
+    padding:0px 0px 0px;
+    background-color: #e9f3f2f6;
+}
+.blue-bg{
+    background-color: rgb(32, 19, 212);
+
+}
+
+.green-bg
+{
+    background-color:#9055A2;
+}
+
+.green-color
+{
+    color:rgb(70, 192, 100);
+}
+
+.red-bg
+{
+    background-color: rgb(255, 53, 53);
+}
+.red-color
+{
+    color:rgb(255, 53, 53);
+}
+
+.text-centered{
+    text-align: center;
+}
+
+.text_control,select{
+    border :1px solid #998d8de8;
+    border-radius: 2px;
+    padding:7px;
+    background-color: #fff;
+    height:25px;
+    
+
+}
+
+.text_control,select,textarea{
+    font-size: 12pt;
+}
+select{
+    border :1px solid #998d8de8;
+    border-radius: 2px;
+    padding:5px;
+    background-color: #fff;
+    height:30px;
+}
+
+.normal-content{
+    margin: 20px 0px 0px 0px;
+}
+
+nav>ul>li>a{
+    style : none;
+}
+
+.login-form-container
+{
+    display:flex;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid  rgb(221, 214, 220);
+    height:auto;
+}
+
+
+.login-form-container>.form{
+    display: grid;
+    width:90%;
+    margin:30px auto;
+    grid-template-columns: 1f;
+    height : auto;
+
+}
+
+.form_control{
+    display:grid;
+    width:100%;
+}
+
+.form-controls-container
+{
+    display:flex;
+    align-content: end;
+    margin: 10px auto 0px;
+}
+
+.call_to_register{
+    grid-area: call_to_register;
+}
+
+.call_to_signin
+{
+   grid-area:  call_to_signin;
+   padding: 10px auto;
+}
+
+.form-para-label{
+    margin: 10px 0px 5px;
+    font-size: 14pt;
+}
+
+.img_log{
+    margin: 5% auto;
+    width:80px;
+    height:80%;
+}
+
+.primary-button{
+    background-color:rgb(76, 84, 190); 
+    color :#ffffff;
+    border : 1px solid rgb(101, 103, 250);
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:0px;
+    font-size: 12pt;
+    padding : 10px auto;
+    height:40px;
+    width : 120px;
+    border-radius : 7px;
+}
+
+.primary-button:hover{
+    color :yellow;
+    transition-delay : 1000ms;
+}
+
+.logo_container{
+    display:flex;
+    padding:auto;
+    height:60px;
+    grid-area: logo;
+    align-content: center;
+}
+.editButton:hover
+{
+    color: yellow;
+    background-color:#e68686;
+    transition-delay:1000ms;
+}
+
+.horizontal-line{
+    width: 100%;
+    margin:10px 0px 10px;
+}
+
+.list-header{
+ height : 20pt;
+ margin:10px;
+}
+
+.with-shadow {
+    -webkit-box-shadow: 0px 10px 20px rgba(109, 109, 109, 0.16) !important;
+    box-shadow: 0px 10px 20px rgba(109, 109, 109, 0.16) !important;
+}
