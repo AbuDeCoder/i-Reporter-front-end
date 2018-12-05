@@ -1,0 +1,150 @@
+.body_wrapper
+{
+    display: grid;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:100%;
+    grid-template-areas: 
+            "welcomebanner"
+            "content"
+            "footer";
+}
+
+
+footer{
+    display:flex;
+    width:100%;
+    align-content: center;
+    height: 50px;
+}
+
+.welcomebanner
+{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: 2f 8f;
+    height: auto;
+    padding:6px;
+    grid-area: welcomebanner;
+    grid-template-areas: 
+            "logo"
+            "welcomemessage";        
+}
+
+.welcome_message{
+    text-align: center;
+}
+
+.banner_main{
+    grid-column: 2;
+    grid-row: 1;
+    color : yellow;
+    grid-area  :welcomemessage;
+}
+
+.content
+{
+    display:grid;
+    margin: 0px auto 100px;
+    grid-gap: 10px; 
+    width:90%;
+    grid-template-columns:100%;
+    grid-area: content;
+    grid-template-areas: 
+            "call_to_register"
+            "call_to_signin"; 
+}
+
+.info_1{
+    margin:50px auto;
+    font-size : 16pt;
+}
+
+.info{
+    margin: 30px auto;
+    font-size : 14pt;
+  }
+
+.info_1,.info{
+  width : 80%;
+  margin: 30px auto;
+}
+
+.reg-butt-container{
+ display:flex;
+ align-content: center;
+ height :auto;
+}
+
+.register_button{
+    color :#ffffff;
+    border : 1px solid rgb(40, 233, 127);
+    margin:20px auto;
+    font-size: 13pt;
+    padding : 20px 40px;
+    height:auto;
+    border-radius : 7px;
+}
+
+.register_button:hover{
+    border : 1px solid rgb(233, 156, 40);
+    background-color:  rgb(233, 156, 40);
+    transition: 1000ms;
+    transition-property: background-color, border;
+}
+
+
+@media (min-width: 500px)
+  {
+    .body_wrapper {
+      grid-template-columns: 1f;
+      grid-template-areas: 
+        "welcomebanner"
+        "content";
+    }
+
+    .welcomebanner {
+        grid-template-columns: 1fr 9fr;
+        grid-template-areas: 
+          "logo  welcomemessage";
+      }
+
+      .welcome_message{text-align: left;}
+
+    .content{
+        grid-gap: 20px; 
+        margin : 0px auto 30px;
+        grid-template-columns: 7fr 4fr;
+        grid-template-areas: 
+          "call_to_register  call_to_signin";
+
+    }
+
+    .logincontent{
+        margin : 0px auto 160px; 
+    }
+
+    .login-form-container> form{
+        display: grid;
+        width:90%;
+        margin:0px auto 20px;
+        grid-template-columns: 1f;
+    }
+
+    
+   .footer-para{
+        width:80%;
+        margin:10px auto;
+    }
+    
+    .welcomebanner{
+        height:60px;
+    }
+    #index-form
+    {
+    margin-bottom : 100px;
+    }
+  }
+
+
